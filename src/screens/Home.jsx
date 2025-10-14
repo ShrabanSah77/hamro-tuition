@@ -9,5 +9,5 @@ export default function Home() {
       <div>Body</div>
       <div><Footer/></div>
     </div>
-  )
+  );
 }
