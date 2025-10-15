@@ -1,18 +1,45 @@
-import React from 'react'
+import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
     <div>
-      <div class="card">
-  <div class="card-header">
-    Featured
-  </div>
-  <div class="card-body">
-    <h5 class="card-title">Special title treatment</h5>
-    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-    <a href="/" class="btn btn-primary">Go somewhere</a>
-  </div>
-</div>
+      <div className="container">
+        {" "}
+        <footer className="py-3 my-4">
+          {" "}
+          <ul className="nav justify-content-center border-bottom pb-3 mb-3">
+            {" "}
+            <li className="nav-item">
+              <Link to="/" className="nav-link px-2 text-body-secondary">
+                Home
+              </Link>
+            </li>{" "}
+            <li className="nav-item">
+              <Link to="/" className="nav-link px-2 text-body-secondary">
+                Features
+              </Link>
+            </li>{" "}
+            <li className="nav-item">
+              <Link to="/" className="nav-link px-2 text-body-secondary">
+                Pricing
+              </Link>
+            </li>{" "}
+            <li className="nav-item">
+              <Link to="/" className="nav-link px-2 text-body-secondary">
+                FAQs
+              </Link>
+            </li>{" "}
+            <li className="nav-item">
+              <Link to="/" className="nav-link px-2 text-body-secondary">
+                About
+              </Link>
+            </li>{" "}
+          </ul>{" "}
+          <p className="text-center text-body-secondary">© 2025 Grocery, Inc</p>{" "}
+        </footer>{" "}
+      </div>
+      ;
     </div>
-  )
+  );
 }
