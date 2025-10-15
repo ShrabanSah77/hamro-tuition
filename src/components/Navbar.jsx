@@ -1,13 +1,14 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
-          <a className="navbar-brand" href="">
+          <link className="navbar-brand" href="/">
             Navbar
-          </a>
+          </link>
           <button
             className="navbar-toggler"
             type="button"
@@ -22,22 +23,22 @@ export default function Navbar() {
           <div className="collapse navbar-collapse" id="navbarNavDropdown">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <a className="nav-link active" aria-current="page" href="">
+                <link className="nav-link active" aria-current="page" href="/">
                   Home
-                </a>
+                </link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">
+                <link className="nav-link" href="/">
                   Features
-                </a>
+                </link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="">
+                <link className="nav-link" href="/">
                   Pricing
-                </a>
+                </link>
               </li>
               <li className="nav-item dropdown">
-                <a
+                <link
                   className="nav-link dropdown-toggle"
                   href=""
                   role="button"
@@ -45,22 +46,22 @@ export default function Navbar() {
                   aria-expanded="false"
                 >
                   Dropdown link
-                </a>
+                </link>
                 <ul className="dropdown-menu">
                   <li>
-                    <a className="dropdown-item" href="">
+                    <link className="dropdown-item" href="/">
                       Action
-                    </a>
+                    </link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="">
+                    <link className="dropdown-item" href="/">
                       Another action
-                    </a>
+                    </link>
                   </li>
                   <li>
-                    <a className="dropdown-item" href="">
+                    <link className="dropdown-item" href="/">
                       Something else here
-                    </a>
+                    </link>
                   </li>
                 </ul>
               </li>
